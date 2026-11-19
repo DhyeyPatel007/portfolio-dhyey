@@ -36,11 +36,10 @@ img{display:block;max-width:100%}
 .hero-portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:min(80%,760px);z-index:3;
   -webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent 99%);mask-image:linear-gradient(to bottom,#000 78%,transparent 99%)}
 .flower{position:absolute;overflow:visible}
-.f-back-left{width:150px;left:1%;top:40%;z-index:2;animation:drift 7s ease-in-out infinite}
-.f-back-right{width:185px;right:2%;top:26%;z-index:2;animation:drift 8s ease-in-out infinite reverse}
-.f-front-left{width:205px;left:-6%;bottom:-8%;z-index:4;animation:drift 9s ease-in-out infinite}
-.f-front-cover{width:172px;left:31%;top:35%;z-index:5;animation:drift 7.5s ease-in-out infinite reverse}
-.f-front-right{width:150px;right:-2%;bottom:-3%;z-index:4;animation:drift 8.5s ease-in-out infinite}
+.f-back-left{width:160px;left:3%;top:38%;z-index:2;animation:drift 7s ease-in-out infinite}
+.f-back-right{width:190px;right:2%;top:22%;z-index:2;animation:drift 8s ease-in-out infinite reverse}
+.f-front-left{width:215px;left:-5%;bottom:-6%;z-index:4;animation:drift 9s ease-in-out infinite}
+.f-front-right{width:155px;right:-2%;bottom:-3%;z-index:4;animation:drift 8.5s ease-in-out infinite}
 @keyframes drift{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(5deg)}}
 .hero-intro{position:absolute;left:-12%;bottom:16%;z-index:6}
 .hero-intro .hello{font-size:19px;color:#8a8378;font-weight:500}
@@ -50,7 +49,7 @@ img{display:block;max-width:100%}
 @media(max-width:720px){
   .hero-intro{position:absolute;left:5%;bottom:6%}
   .hero-intro .name{font-size:38px}
-  .f-front-left{width:130px}.f-back-right{width:120px}.f-front-cover{width:110px;left:8%;top:24%}
+  .f-front-left{width:130px}.f-back-right{width:120px}
   .hero-portrait{height:72%}
 }
 
