@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhyey — Developer & Founder</title>
+<meta name="description" content="Dhyey Patel — Founder @ Auditify, B.Tech CSE at VIT Bhopal. I build mobile apps, AI tools and SaaS that actually ship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- shared SVG defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="sunflower">
+      <g fill="#F5B81E" stroke="#DE9A0D" stroke-width="1.5">
+        <ellipse cx="0" cy="-40" rx="13" ry="36"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(30)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(150)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(210)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(300)"/>
+        <ellipse cx="0" cy="-40" rx="13" ry="36" transform="rotate(330)"/>
+      </g>
+      <circle r="27" fill="#5B3A1A"/>
+      <g fill="#7A4E21">
+        <circle cx="-12" cy="-8" r="3.4"/><circle cx="10" cy="-13" r="3.4"/><circle cx="0" cy="2" r="3.4"/>
+        <circle cx="-6" cy="13" r="3.4"/><circle cx="14" cy="7" r="3.4"/><circle cx="-16" cy="6" r="3.4"/>
+        <circle cx="5" cy="-3" r="3"/><circle cx="-2" cy="-16" r="3"/>
+      </g>
+      <circle r="27" fill="none" stroke="#3E2712" stroke-width="2"/>
+    </g>
+    <g id="leaf">
+      <path d="M0 0 C 26 -30, 58 -34, 84 -22 C 62 2, 30 10, 0 0 Z" fill="#3E7C3A"/>
+      <path d="M4 -2 C 30 -14, 56 -19, 80 -21" stroke="#2C5B29" stroke-width="3" fill="none"/>
+    </g>
+    <g id="folder">
+      <path d="M6 22 a6 6 0 0 1 6-6 h34 l10 12 h66 a6 6 0 0 1 6 6 v58 a6 6 0 0 1-6 6 H12 a6 6 0 0 1-6-6 Z" fill="#2B5CFF"/>
+      <path d="M6 40 h122 v52 a6 6 0 0 1-6 6 H12 a6 6 0 0 1-6-6 Z" fill="#9CC8FF"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<header class="nav-wrap">
+  <nav class="pill-nav" aria-label="Main">
+    <button class="nav-link active" data-view="home" data-hover>Home</button>
+    <button class="nav-link" data-view="projects" data-hover>Projects</button>
+    <button class="nav-link" data-view="about" data-hover>About Me</button>
+    <a class="nav-cta" href="mailto:dhyeypatel.work@gmail.com" data-hover>Let's Connect <span class="arr">↗</span></a>
+  </nav>
+</header>
+
+<main>
+<!-- ============================= HOME ============================= -->
+<div id="view-home" class="view active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="giant-name parallax" data-speed="0.25">Dhyey</h1>
+    <div class="hero-stage">
+      <svg class="flower f-back-left" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+      <svg class="flower f-back-right" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+      <img class="hero-portrait" src="assets/hero-main.png" alt="Dhyey Patel portrait">
+      <svg class="flower f-front-left" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+      <svg class="flower f-front-cover" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+      <svg class="flower f-front-right" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+      <div class="hero-intro reveal">
+        <p class="hello">Hello I'm</p>
+        <p class="name">Dhyey</p>
+        <p class="tagline">I Build Apps &amp; AI Tools.<br>And Ship Them For Real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p class="intro-text reveal">I Combine Development Skill With Design Sense To Build Mobile Apps, AI Tools And SaaS Products That Are Clean, Structured And Made To Work In The Real World. My Work Focuses On Clarity, Consistency, And Shipping — Ensuring Every Product Is Both Well-Built And Effective In Its Intent.</p>
+    <button class="pill-btn olive reveal" data-view="about" data-hover>More About Me <span class="arr">↗</span></button>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2 class="section-title taupe reveal">What I can Help you with?</h2>
+    <div class="fan reveal">
+      <article class="svc-card tilt-1">
+        <svg class="sphere" viewBox="0 0 120 120">
+          <g fill="none" stroke="#2B5CFF" stroke-width="1.6">
+            <circle cx="60" cy="60" r="46"/><ellipse cx="60" cy="60" rx="30" ry="46"/><ellipse cx="60" cy="60" rx="13" ry="46"/>
+            <ellipse cx="60" cy="60" rx="46" ry="30"/><ellipse cx="60" cy="60" rx="46" ry="13"/><line x1="14" y1="60" x2="106" y2="60"/>
+          </g>
+          <circle cx="60" cy="60" r="17" fill="#111" stroke="#2B5CFF" stroke-width="2.5"/>
+        </svg>
+        <div class="svc-band" style="background:#2B5CFF">Mobile App<br>Development</div>
+      </article>
+      <article class="svc-card tilt-2">
+        <svg class="sphere" viewBox="0 0 120 120">
+          <g fill="none" stroke="#1FA9A0" stroke-width="1.6">
+            <circle cx="60" cy="60" r="46"/><ellipse cx="60" cy="60" rx="30" ry="46"/><ellipse cx="60" cy="60" rx="13" ry="46"/>
+            <ellipse cx="60" cy="60" rx="46" ry="30"/><ellipse cx="60" cy="60" rx="46" ry="13"/><line x1="14" y1="60" x2="106" y2="60"/>
+          </g>
+          <rect x="44" y="44" width="32" height="32" fill="#111" stroke="#1FA9A0" stroke-width="2.5"/>
+        </svg>
+        <div class="svc-band" style="background:#1FA9A0">Web Apps<br>&amp; SaaS</div>
+      </article>
+      <article class="svc-card tilt-3">
+        <svg class="sphere" viewBox="0 0 120 120">
+          <g fill="none" stroke="#F24E9B" stroke-width="1.6">
+            <circle cx="60" cy="60" r="46"/><ellipse cx="60" cy="60" rx="30" ry="46"/><ellipse cx="60" cy="60" rx="13" ry="46"/>
+            <ellipse cx="60" cy="60" rx="46" ry="30"/><ellipse cx="60" cy="60" rx="46" ry="13"/><line x1="14" y1="60" x2="106" y2="60"/>
+          </g>
+          <path d="M60 42 L78 76 L42 76 Z" fill="#111" stroke="#F24E9B" stroke-width="2.5"/>
+        </svg>
+        <div class="svc-band" style="background:#F24E9B">AI Tools &amp;<br>Automation</div>
+      </article>
+      <article class="svc-card tilt-4">
+        <svg class="sphere" viewBox="0 0 120 120">
+          <g fill="none" stroke="#FFB020" stroke-width="1.6">
+            <circle cx="60" cy="60" r="46"/><ellipse cx="60" cy="60" rx="30" ry="46"/><ellipse cx="60" cy="60" rx="13" ry="46"/>
+            <ellipse cx="60" cy="60" rx="46" ry="30"/><ellipse cx="60" cy="60" rx="46" ry="13"/><line x1="14" y1="60" x2="106" y2="60"/>
+          </g>
+          <path d="M60 42 L78 60 L60 78 L42 60 Z" fill="#111" stroke="#FFB020" stroke-width="2.5"/>
+        </svg>
+        <div class="svc-band" style="background:#FF8A1A">UI/UX &amp;<br>Figma Design</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TOOLKIT -->
+  <section class="toolkit">
+    <h2 class="section-title huge reveal">My Creative Toolkit</h2>
+    <ul class="tool-list reveal">
+      <li data-hover><span>React Native</span><span class="arr">↗</span></li>
+      <li data-hover><span>TypeScript</span><span class="arr">↗</span></li>
+      <li data-hover><span>React</span><span class="arr">↗</span></li>
+      <li data-hover><span>Python</span><span class="arr">↗</span></li>
+      <li data-hover><span>Figma</span><span class="arr">↗</span></li>
+      <li data-hover><span>Supabase</span><span class="arr">↗</span></li>
+      <li data-hover><span>Expo</span><span class="arr">↗</span></li>
+      <li data-hover><span>GitHub</span><span class="arr">↗</span></li>
+    </ul>
+  </section>
+
+  <!-- VISUAL ARCHIVE -->
+  <section class="archive">
+    <h2 class="watermark parallax" data-speed="0.15">Visual<br>Archive</h2>
+    <p class="archive-sub reveal">B E Y O N D &nbsp; T H E &nbsp; V I S U A L S</p>
+    <div class="archive-row">
+      <a class="arch-card off-1" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover>
+        <div class="poster p-spec arch"><span class="poster-big">Spec<br>Balloon</span><span class="poster-small">CAD → FAI EXCEL</span></div>
+        <span class="arch-label">DHYEY <i>↗</i></span>
+      </a>
+      <a class="arch-card off-2" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover>
+        <div class="poster p-audit arch"><span class="poster-big">Auditify</span><span class="poster-small">36-CHECK AUDIT</span></div>
+        <span class="arch-label">DHYEY <i>↗</i></span>
+      </a>
+      <a class="arch-card off-3" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover>
+        <div class="poster p-dopa arch"><span class="poster-big">Dopa<br>Diary</span><span class="poster-small">PARKINSON'S CARE</span></div>
+        <span class="arch-label">DHYEY <i>↗</i></span>
+      </a>
+      <a class="arch-card off-2" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover>
+        <div class="poster p-gill arch"><span class="poster-big">GillNet<br>AI</span><span class="poster-small">SCAM DETECTION</span></div>
+        <span class="arch-label">DHYEY <i>↗</i></span>
+      </a>
+      <a class="arch-card off-1" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover>
+        <div class="poster p-phalanx arch"><span class="poster-big">Phalanx</span><span class="poster-small">DISPUTE DEFENSE</span></div>
+        <span class="arch-label">DHYEY <i>↗</i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PROJECTS (home) -->
+  <section class="projects-home">
+    <div class="projects-head reveal">
+      <h2 class="section-title huge">Our Projects</h2>
+      <button class="pill-btn small dark" data-view="projects" data-hover>View All Projects <span class="arr">↗</span></button>
+    </div>
+    <div class="tabs reveal" data-tabs="home">
+      <button class="tab active" data-tab="ai" data-hover>AI Tools</button>
+      <button class="tab" data-tab="mobile" data-hover>Mobile Apps</button>
+      <button class="tab" data-tab="web" data-hover>Web &amp; SaaS</button>
+      <button class="tab" data-tab="security" data-hover>Security Tools</button>
+    </div>
+    <div class="panel-row" data-panel="home-ai">
+      <a class="proj-card" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-spec"><span class="poster-big">SpecBalloon</span><span class="poster-small">AI READS CAD DRAWINGS — AUTO-BALLOONS DIMENSIONS &amp; GD&amp;T INTO FAI / PPAP EXCEL</span></div></a>
+      <a class="proj-card" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-audit"><span class="poster-big">Auditify</span><span class="poster-small">FREE WEBSITE AUDIT — 36 CHECKS, FULL REPORT &amp; PDF</span></div></a>
+      <a class="proj-card" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM — HUMAN APPROVAL GATE</span></div></a>
+      <a class="proj-card" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-tether"><span class="poster-big">TETHER</span><span class="poster-small">OFFLINE SPLIT-BRAIN PERSISTENCE FOR AI AGENTS</span></div></a>
+    </div>
+    <div class="panel-row hidden" data-panel="home-mobile">
+      <a class="proj-card" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-dopa"><span class="poster-big">DopaDiary</span><span class="poster-small">PARKINSON'S MONITORING — 4 TRAINED ENGINES, DOSE CLOCK</span></div></a>
+      <a class="proj-card" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><div class="poster p-evenly"><span class="poster-big">Evenly</span><span class="poster-small">EXPENSE SPLITTING — PAISE-PERFECT SPLITS, SMART SETTLE-UP</span></div></a>
+      <a class="proj-card" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION — URL &amp; TEXT ANALYSIS</span></div></a>
+    </div>
+    <div class="panel-row hidden" data-panel="home-web">
+      <a class="proj-card" href="https://krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-krynex"><span class="poster-big">Krynex</span><span class="poster-small">AUDIT AGENCY — FIGMA-FIRST, PREMIUM TYPOGRAPHY</span></div></a>
+      <a class="proj-card" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-vajra"><span class="poster-big">Vajra</span><span class="poster-small">GPU KERNEL OPTIMISATION — MEASURED BENCHMARKS</span></div></a>
+      <a class="proj-card" href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover><div class="poster p-paper"><span class="poster-big">PaperFellows</span><span class="poster-small">STUDENT PAPER &amp; NOTES PLATFORM</span></div></a>
+    </div>
+    <div class="panel-row hidden" data-panel="home-security">
+      <a class="proj-card" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION — URL &amp; TEXT ANALYSIS</span></div></a>
+      <a class="proj-card" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><div class="poster p-datum"><span class="poster-big">DATUM</span><span class="poster-small">SQL INJECTION TESTING UI — PERMISSION-FIRST LAB</span></div></a>
+      <a class="proj-card" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM — HUMAN APPROVAL GATE</span></div></a>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-sec">
+    <h2 class="video-title reveal">V i d e o &nbsp; E d i t i n g</h2>
+    <div class="video-row reveal">
+      <a class="video-card" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover>
+        <span class="video-big">Product Films</span>
+        <span class="video-small">The Build That Tells The Story</span>
+        <span class="video-link">Visit link ↗</span>
+      </a>
+      <a class="video-card" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover>
+        <span class="video-big">Launch Videos</span>
+        <span class="video-small">Watch Now</span>
+        <span class="video-link">Visit link ↗</span>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=Vq2Ll0ijxWk" target="_blank" rel="noopener" data-hover>
+        <span class="video-big">Demo Reels</span>
+        <span class="video-small">Explore More...</span>
+        <span class="video-link">Visit link ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT + FOOTER -->
+  <section class="contact reveal-slide">
+    <h2 class="contact-big">Great Things<br>Begin Together.</h2>
+    <p class="contact-sub">From Product Builds to New Opportunities, Let's make Something Meaningful happen.</p>
+    <p class="contact-mail">dhyeypatel.work@gmail.com</p>
+    <a class="pill-btn white" href="mailto:dhyeypatel.work@gmail.com" data-hover>Let's Connect <span class="arr">↗</span></a>
+  </section>
+  <footer class="footer">
+    <div class="footer-cols">
+      <p class="footer-tag">Builder Mindset.<br>Design Skillset.<br>Product Vision.</p>
+      <nav class="footer-col">
+        <h3>Quick Links</h3>
+        <button data-view="home" data-hover>Home</button>
+        <button data-view="projects" data-hover>Projects</button>
+        <button data-view="about" data-hover>About Me</button>
+      </nav>
+      <div class="footer-col">
+        <h3>Connect Me On</h3>
+        <a href="https://www.linkedin.com/in/dhyeypatel-work" target="_blank" rel="noopener" data-hover>LinkedIn</a>
+        <a href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover>GitHub</a>
+      </div>
+    </div>
+    <div class="footer-giant parallax" data-speed="0.1">Dhyey</div>
+    <div class="footer-bar">
+      <span>Proudly Crafted in India</span>
+      <span>©2026 Dhyey Patel</span>
+      <span>All Rights Reserved</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================= PROJECTS ============================= -->
+<div id="view-projects" class="view">
+  <section class="proj-hero">
+    <h1 class="proj-giant parallax" data-speed="0.2">Projects</h1>
+    <svg class="folder f1" viewBox="0 0 134 104"><use href="#folder"/></svg>
+    <svg class="folder f2" viewBox="0 0 134 104"><use href="#folder"/></svg>
+    <svg class="folder f3" viewBox="0 0 134 104"><use href="#folder"/></svg>
+    <svg class="folder f4" viewBox="0 0 134 104"><use href="#folder"/></svg>
+  </section>
+  <section class="projects-page">
+    <div class="tabs" data-tabs="page">
+      <button class="tab active" data-tab="ai" data-hover>AI Tools</button>
+      <button class="tab" data-tab="mobile" data-hover>Mobile Apps</button>
+      <button class="tab" data-tab="web" data-hover>Web &amp; SaaS</button>
+      <button class="tab" data-tab="security" data-hover>Security Tools</button>
+      <button class="tab" data-tab="all" data-hover>All Projects</button>
+    </div>
+    <div class="grid" data-panel="page-ai">
+      <a class="proj-card tall" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-spec"><span class="poster-big">SpecBalloon</span><span class="poster-small">AI READS 2D CAD DRAWINGS — AUTO-BALLOONS DIMENSIONS &amp; GD&amp;T INTO FAI / PPAP EXCEL FOR CNC &amp; AUTO SHOPS</span></div></a>
+      <a class="proj-card tall" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-audit"><span class="poster-big">Auditify</span><span class="poster-small">FREE WEBSITE AUDIT TOOL — 36 CHECKS, FULL REPORT, PDF &amp; MONITORING</span></div></a>
+      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM WITH A MANDATORY HUMAN APPROVAL GATE</span></div></a>
+      <a class="proj-card tall" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-tether"><span class="poster-big">TETHER</span><span class="poster-small">ZERO-SDK SPLIT-BRAIN PERSISTENCE — AI AGENTS THAT SURVIVE DISCONNECTS</span></div></a>
+    </div>
+    <div class="grid hidden" data-panel="page-mobile">
+      <a class="proj-card tall" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-dopa"><span class="poster-big">DopaDiary</span><span class="poster-small">PARKINSON'S MONITORING — SPIRAL, VOICE, TAPPING &amp; TREMOR ENGINES ON A DOSE CLOCK</span></div></a>
+      <a class="proj-card tall" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><div class="poster p-evenly"><span class="poster-big">Evenly</span><span class="poster-small">EXPENSE SPLITTING — PAISE-PERFECT SPLITS, UPI SETTLE-UP, OFFLINE-FIRST</span></div></a>
+      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION FOR URLS AND TEXT — CREDIT-GATED, LIVE</span></div></a>
+    </div>
+    <div class="grid hidden" data-panel="page-web">
+      <a class="proj-card tall" href="https://krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-krynex"><span class="poster-big">Krynex</span><span class="poster-small">AUDIT AGENCY SITE — FIGMA-FIRST, PREMIUM TYPOGRAPHY, NO SLOP</span></div></a>
+      <a class="proj-card tall" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-vajra"><span class="poster-big">Vajra</span><span class="poster-small">GPU KERNEL OPTIMISATION — SGEMM, SOFTMAX, CONV1D &amp; SOBEL, MEASURED</span></div></a>
+      <a class="proj-card tall" href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover><div class="poster p-paper"><span class="poster-big">PaperFellows</span><span class="poster-small">STUDENT PAPER &amp; NOTES PLATFORM</span></div></a>
+    </div>
+    <div class="grid hidden" data-panel="page-security">
+      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION FOR URLS AND TEXT</span></div></a>
+      <a class="proj-card tall" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><div class="poster p-datum"><span class="poster-big">DATUM</span><span class="poster-small">SQL INJECTION TESTING UI OVER SQLMAP — OWN SITES &amp; PRACTICE LAB ONLY</span></div></a>
+      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM — EVIDENCE, OFFERS &amp; VERDICTS</span></div></a>
+    </div>
+    <div class="grid hidden" data-panel="page-all">
+      <a class="proj-card tall" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-spec"><span class="poster-big">SpecBalloon</span><span class="poster-small">AI TOOLS</span></div></a>
+      <a class="proj-card tall" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-audit"><span class="poster-big">Auditify</span><span class="poster-small">AI TOOLS</span></div></a>
+      <a class="proj-card tall" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-dopa"><span class="poster-big">DopaDiary</span><span class="poster-small">MOBILE APPS</span></div></a>
+      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">MOBILE / SECURITY</span></div></a>
+      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">AI TOOLS / SECURITY</span></div></a>
+      <a class="proj-card tall" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-tether"><span class="poster-big">TETHER</span><span class="poster-small">AI TOOLS</span></div></a>
+      <a class="proj-card tall" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><div class="poster p-evenly"><span class="poster-big">Evenly</span><span class="poster-small">MOBILE APPS</span></div></a>
+      <a class="proj-card tall" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-vajra"><span class="poster-big">Vajra</span><span class="poster-small">WEB &amp; SAAS</span></div></a>
+      <a class="proj-card tall" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><div class="poster p-datum"><span class="poster-big">DATUM</span><span class="poster-small">SECURITY TOOLS</span></div></a>
+      <a class="proj-card tall" href="https://krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-krynex"><span class="poster-big">Krynex</span><span class="poster-small">WEB &amp; SAAS</span></div></a>
+    </div>
+  </section>
+  <section class="contact reveal-slide">
+    <h2 class="contact-big">Great Things<br>Begin Together.</h2>
+    <p class="contact-sub">From Product Builds to New Opportunities, Let's make Something Meaningful happen.</p>
+    <p class="contact-mail">dhyeypatel.work@gmail.com</p>
+    <a class="pill-btn white" href="mailto:dhyeypatel.work@gmail.com" data-hover>Let's Connect <span class="arr">↗</span></a>
+  </section>
+  <footer class="footer">
+    <div class="footer-cols">
+      <p class="footer-tag">Builder Mindset.<br>Design Skillset.<br>Product Vision.</p>
+      <nav class="footer-col">
+        <h3>Quick Links</h3>
+        <button data-view="home" data-hover>Home</button>
+        <button data-view="projects" data-hover>Projects</button>
+        <button data-view="about" data-hover>About Me</button>
+      </nav>
+      <div class="footer-col">
+        <h3>Connect Me On</h3>
+        <a href="https://www.linkedin.com/in/dhyeypatel-work" target="_blank" rel="noopener" data-hover>LinkedIn</a>
+        <a href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover>GitHub</a>
+      </div>
+    </div>
+    <div class="footer-giant parallax" data-speed="0.1">Dhyey</div>
+    <div class="footer-bar">
+      <span>Proudly Crafted in India</span>
+      <span>©2026 Dhyey Patel</span>
+      <span>All Rights Reserved</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================= ABOUT ============================= -->
+<div id="view-about" class="view">
+  <section class="about-hero">
+    <h1 class="about-giant">Dhyey</h1>
+    <span class="about-pill">About Me ↓</span>
+  </section>
+  <section class="about-grey">
+    <h2 class="about-giant-white">Dhyey</h2>
+    <div class="about-portrait-card reveal">
+      <svg class="leaf l1" viewBox="0 0 90 40"><use href="#leaf"/></svg>
+      <svg class="flower a-f1" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+      <img src="assets/about-main.png" alt="Dhyey Patel">
+      <svg class="flower a-f2" viewBox="-80 -80 160 160"><use href="#sunflower"/></svg>
+    </div>
+  </section>
+  <section class="about-body">
+    <div class="about-block reveal">
+      <h2>The Builder Behind the Portfolio</h2>
+      <p>I'm Dhyey Patel, a developer and founder from India who blends building with design to craft products that don't just look good — they ship, and they work.</p>
+    </div>
+    <div class="about-block reveal">
+      <h2>My Background</h2>
+      <p>I started with curiosity, grew through shipping, and now build products where AI is the hard core — not a wrapper. Every project is a chance to learn, experiment, and make something people actually use.</p>
+      <ul class="edu-list">
+        <li><strong>B.Tech CSE</strong> — VIT Bhopal (2025–2029)</li>
+        <li><strong>Editor</strong> — GSoC Innovators Club, VIT Bhopal</li>
+      </ul>
+    </div>
+    <div class="about-block reveal">
+      <h2>What Drives Me</h2>
+      <ul class="drive-list">
+        <li><strong>Build Real Things</strong> — working products over demos and mockups.</li>
+        <li><strong>Ship Over Show</strong> — a live link beats a pitch, every time.</li>
+        <li><strong>Clarity First</strong> — if it isn't clear, it isn't finished.</li>
+        <li><strong>Always Learning</strong> — every build teaches the next one.</li>
+        <li><strong>Build With Purpose</strong> — effort should turn into proof, and into value.</li>
+      </ul>
+    </div>
+    <div class="about-block reveal">
+      <h2>How I Work</h2>
+      <p>My approach is simple, but it works: I start by understanding the problem and who it's for. Then I build fast, verify on the live product itself — never on claims — and ship.</p>
+    </div>
+    <div class="about-block reveal">
+      <h2>Experience</h2>
+      <ul class="edu-list">
+        <li><strong>Founder &amp; Developer</strong> — Auditify (Sep 2026 – Present)</li>
+        <li><strong>Freelance Developer</strong> — (Jan 2026 – Present)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="contact reveal-slide">
+    <h2 class="contact-big">Great Things<br>Begin Together.</h2>
+    <p class="contact-sub">From Product Builds to New Opportunities, Let's make Something Meaningful happen.</p>
+    <p class="contact-mail">dhyeypatel.work@gmail.com</p>
+    <a class="pill-btn white" href="mailto:dhyeypatel.work@gmail.com" data-hover>Let's Connect <span class="arr">↗</span></a>
+  </section>
+  <footer class="footer">
+    <div class="footer-cols">
+      <p class="footer-tag">Builder Mindset.<br>Design Skillset.<br>Product Vision.</p>
+      <nav class="footer-col">
+        <h3>Quick Links</h3>
+        <button data-view="home" data-hover>Home</button>
+        <button data-view="projects" data-hover>Projects</button>
+        <button data-view="about" data-hover>About Me</button>
+      </nav>
+      <div class="footer-col">
+        <h3>Connect Me On</h3>
+        <a href="https://www.linkedin.com/in/dhyeypatel-work" target="_blank" rel="noopener" data-hover>LinkedIn</a>
+        <a href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover>GitHub</a>
+      </div>
+    </div>
+    <div class="footer-giant parallax" data-speed="0.1">Dhyey</div>
+    <div class="footer-bar">
+      <span>Proudly Crafted in India</span>
+      <span>©2026 Dhyey Patel</span>
+      <span>All Rights Reserved</span>
+    </div>
+  </footer>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
