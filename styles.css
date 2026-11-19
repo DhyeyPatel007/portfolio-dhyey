@@ -13,9 +13,10 @@ img{display:block;max-width:100%}
 ::selection{background:var(--orange);color:#fff}
 
 /* custom cursor */
-.cursor{position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:#111;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .25s,height .25s,background .25s,opacity .25s;opacity:.9}
-.cursor.grow{width:110px;height:110px;background:rgba(120,120,120,.35)}
-@media (hover:none){.cursor{display:none} body,a,button{cursor:auto}}
+.cursor{position:fixed;top:0;left:0;width:9px;height:9px;border-radius:50%;background:#fff;mix-blend-mode:difference;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
+.cursor-ring{position:fixed;top:0;left:0;width:38px;height:38px;border-radius:50%;border:1.5px solid #fff;mix-blend-mode:difference;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s,background .3s,opacity .3s}
+.cursor-ring.grow{width:74px;height:74px;background:rgba(255,255,255,.92)}
+@media (hover:none){.cursor,.cursor-ring{display:none} body,a,button{cursor:auto}}
 
 /* nav */
 .nav-wrap{position:fixed;top:18px;left:0;right:0;display:flex;justify-content:center;z-index:1000;padding:0 12px}
@@ -33,13 +34,13 @@ img{display:block;max-width:100%}
 .hero{position:relative;background:var(--cream);min-height:100svh;overflow:hidden;padding-top:86px}
 .giant-name{position:absolute;top:52px;left:50%;transform:translateX(-50%);font-size:clamp(110px,19.5vw,305px);font-weight:800;color:var(--taupe);letter-spacing:-.01em;line-height:1;z-index:1;white-space:nowrap;user-select:none}
 .hero-stage{position:relative;max-width:900px;margin:0 auto;height:calc(100svh - 86px);min-height:560px}
-.hero-portrait{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:min(80%,760px);z-index:3;
+.hero-portrait{position:absolute;left:50%;bottom:-4%;transform:translateX(-50%);height:min(92%,860px);z-index:3;
   -webkit-mask-image:linear-gradient(to bottom,#000 78%,transparent 99%);mask-image:linear-gradient(to bottom,#000 78%,transparent 99%)}
 .flower{position:absolute;overflow:visible}
-.f-back-left{width:160px;left:3%;top:38%;z-index:2;animation:drift 7s ease-in-out infinite}
-.f-back-right{width:190px;right:2%;top:22%;z-index:2;animation:drift 8s ease-in-out infinite reverse}
-.f-front-left{width:215px;left:-5%;bottom:-6%;z-index:4;animation:drift 9s ease-in-out infinite}
-.f-front-right{width:155px;right:-2%;bottom:-3%;z-index:4;animation:drift 8.5s ease-in-out infinite}
+.f-back-left{width:142px;left:16%;top:33%;z-index:2;animation:drift 7s ease-in-out infinite}
+.f-back-right{width:188px;right:13%;top:23%;z-index:2;animation:drift 8s ease-in-out infinite reverse}
+.f-front-left{width:218px;left:-4%;bottom:-6%;z-index:4;animation:drift 9s ease-in-out infinite}
+.f-front-right{width:152px;right:-4%;bottom:-5%;z-index:4;animation:drift 8.5s ease-in-out infinite}
 @keyframes drift{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(5deg)}}
 .hero-intro{position:absolute;left:-12%;bottom:16%;z-index:6}
 .hero-intro .hello{font-size:19px;color:#8a8378;font-weight:500}
@@ -50,7 +51,7 @@ img{display:block;max-width:100%}
   .hero-intro{position:absolute;left:5%;bottom:6%}
   .hero-intro .name{font-size:38px}
   .f-front-left{width:130px}.f-back-right{width:120px}
-  .hero-portrait{height:72%}
+  .hero-portrait{height:84%}
 }
 
 /* ---------- INTRO ---------- */
@@ -102,6 +103,13 @@ img{display:block;max-width:100%}
 .poster-small{font-size:10.5px;font-weight:600;letter-spacing:.14em;line-height:1.55;opacity:.85}
 .poster.arch{aspect-ratio:3/4.1;justify-content:flex-end}
 .poster.arch .poster-big{font-size:24px}
+.poster-img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block}
+.panel-row img[src*="gillnet.png"]{object-position:50% 8%}
+.panel-row img[src*="tether.png"]{object-position:50% 78%}
+.panel-row img[src*="phalanx.png"]{object-position:50% 62%}
+.panel-row img[src*="paperfellows.png"]{object-position:50% 62%}
+.arch-card img[src*="gillnet.png"]{object-position:50% 0%}
+.arch-card .poster-img{aspect-ratio:3/4.1}
 .p-spec{background:#2456A6;color:#fff}
 .p-audit{background:#F7F3EA;color:#191919;box-shadow:inset 0 0 0 2px #191919}
 .p-audit .poster-big{color:#C93A1B}

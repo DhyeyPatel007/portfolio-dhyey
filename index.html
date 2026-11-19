@@ -50,6 +50,7 @@
 </svg>
 
 <div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
 <!-- NAV -->
 <header class="nav-wrap">
@@ -156,23 +157,23 @@
     <p class="archive-sub reveal">B E Y O N D &nbsp; T H E &nbsp; V I S U A L S</p>
     <div class="archive-row">
       <a class="arch-card off-1" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover>
-        <div class="poster p-spec arch"><span class="poster-big">Spec<br>Balloon</span><span class="poster-small">CAD → FAI EXCEL</span></div>
+        <img class="poster-img" src="assets/posters/specballoon.png" alt="SpecBalloon poster">
         <span class="arch-label">DHYEY <i>↗</i></span>
       </a>
       <a class="arch-card off-2" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover>
-        <div class="poster p-audit arch"><span class="poster-big">Auditify</span><span class="poster-small">36-CHECK AUDIT</span></div>
+        <img class="poster-img" src="assets/posters/auditify.png" alt="Auditify poster">
         <span class="arch-label">DHYEY <i>↗</i></span>
       </a>
       <a class="arch-card off-3" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover>
-        <div class="poster p-dopa arch"><span class="poster-big">Dopa<br>Diary</span><span class="poster-small">PARKINSON'S CARE</span></div>
+        <img class="poster-img" src="assets/posters/dopadiary.png" alt="DopaDiary poster">
         <span class="arch-label">DHYEY <i>↗</i></span>
       </a>
       <a class="arch-card off-2" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover>
-        <div class="poster p-gill arch"><span class="poster-big">GillNet<br>AI</span><span class="poster-small">SCAM DETECTION</span></div>
+        <img class="poster-img" src="assets/posters/gillnet.png" alt="GillNet AI poster">
         <span class="arch-label">DHYEY <i>↗</i></span>
       </a>
       <a class="arch-card off-1" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover>
-        <div class="poster p-phalanx arch"><span class="poster-big">Phalanx</span><span class="poster-small">DISPUTE DEFENSE</span></div>
+        <img class="poster-img" src="assets/posters/phalanx.png" alt="PHALANX poster">
         <span class="arch-label">DHYEY <i>↗</i></span>
       </a>
     </div>
@@ -191,47 +192,25 @@
       <button class="tab" data-tab="security" data-hover>Security Tools</button>
     </div>
     <div class="panel-row" data-panel="home-ai">
-      <a class="proj-card" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-spec"><span class="poster-big">SpecBalloon</span><span class="poster-small">AI READS CAD DRAWINGS — AUTO-BALLOONS DIMENSIONS &amp; GD&amp;T INTO FAI / PPAP EXCEL</span></div></a>
-      <a class="proj-card" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-audit"><span class="poster-big">Auditify</span><span class="poster-small">FREE WEBSITE AUDIT — 36 CHECKS, FULL REPORT &amp; PDF</span></div></a>
-      <a class="proj-card" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM — HUMAN APPROVAL GATE</span></div></a>
-      <a class="proj-card" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-tether"><span class="poster-big">TETHER</span><span class="poster-small">OFFLINE SPLIT-BRAIN PERSISTENCE FOR AI AGENTS</span></div></a>
+      <a class="proj-card" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/specballoon.png" alt="SpecBalloon poster"></a>
+      <a class="proj-card" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/auditify.png" alt="Auditify poster"></a>
+      <a class="proj-card" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/phalanx.png" alt="PHALANX poster"></a>
+      <a class="proj-card" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/tether.png" alt="TETHER poster"></a>
     </div>
     <div class="panel-row hidden" data-panel="home-mobile">
-      <a class="proj-card" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-dopa"><span class="poster-big">DopaDiary</span><span class="poster-small">PARKINSON'S MONITORING — 4 TRAINED ENGINES, DOSE CLOCK</span></div></a>
-      <a class="proj-card" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><div class="poster p-evenly"><span class="poster-big">Evenly</span><span class="poster-small">EXPENSE SPLITTING — PAISE-PERFECT SPLITS, SMART SETTLE-UP</span></div></a>
-      <a class="proj-card" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION — URL &amp; TEXT ANALYSIS</span></div></a>
+      <a class="proj-card" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/dopadiary.png" alt="DopaDiary poster"></a>
+      <a class="proj-card" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/evenly.png" alt="Evenly poster"></a>
+      <a class="proj-card" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/gillnet.png" alt="GillNet AI poster"></a>
     </div>
     <div class="panel-row hidden" data-panel="home-web">
-      <a class="proj-card" href="https://krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-krynex"><span class="poster-big">Krynex</span><span class="poster-small">AUDIT AGENCY — FIGMA-FIRST, PREMIUM TYPOGRAPHY</span></div></a>
-      <a class="proj-card" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-vajra"><span class="poster-big">Vajra</span><span class="poster-small">GPU KERNEL OPTIMISATION — MEASURED BENCHMARKS</span></div></a>
-      <a class="proj-card" href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover><div class="poster p-paper"><span class="poster-big">PaperFellows</span><span class="poster-small">STUDENT PAPER &amp; NOTES PLATFORM</span></div></a>
+      <a class="proj-card" href="https://krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/krynex.png" alt="Krynex poster"></a>
+      <a class="proj-card" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/vajra.png" alt="Vajra poster"></a>
+      <a class="proj-card" href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/paperfellows.png" alt="PaperFellows poster"></a>
     </div>
     <div class="panel-row hidden" data-panel="home-security">
-      <a class="proj-card" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION — URL &amp; TEXT ANALYSIS</span></div></a>
-      <a class="proj-card" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><div class="poster p-datum"><span class="poster-big">DATUM</span><span class="poster-small">SQL INJECTION TESTING UI — PERMISSION-FIRST LAB</span></div></a>
-      <a class="proj-card" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM — HUMAN APPROVAL GATE</span></div></a>
-    </div>
-  </section>
-
-  <!-- VIDEO -->
-  <section class="video-sec">
-    <h2 class="video-title reveal">V i d e o &nbsp; E d i t i n g</h2>
-    <div class="video-row reveal">
-      <a class="video-card" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover>
-        <span class="video-big">Product Films</span>
-        <span class="video-small">The Build That Tells The Story</span>
-        <span class="video-link">Visit link ↗</span>
-      </a>
-      <a class="video-card" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover>
-        <span class="video-big">Launch Videos</span>
-        <span class="video-small">Watch Now</span>
-        <span class="video-link">Visit link ↗</span>
-      </a>
-      <a class="video-card" href="https://www.youtube.com/watch?v=Vq2Ll0ijxWk" target="_blank" rel="noopener" data-hover>
-        <span class="video-big">Demo Reels</span>
-        <span class="video-small">Explore More...</span>
-        <span class="video-link">Visit link ↗</span>
-      </a>
+      <a class="proj-card" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/gillnet.png" alt="GillNet AI poster"></a>
+      <a class="proj-card" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/datum.png" alt="DATUM poster"></a>
+      <a class="proj-card" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/phalanx.png" alt="PHALANX poster"></a>
     </div>
   </section>
 
@@ -284,37 +263,37 @@
       <button class="tab" data-tab="all" data-hover>All Projects</button>
     </div>
     <div class="grid" data-panel="page-ai">
-      <a class="proj-card tall" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-spec"><span class="poster-big">SpecBalloon</span><span class="poster-small">AI READS 2D CAD DRAWINGS — AUTO-BALLOONS DIMENSIONS &amp; GD&amp;T INTO FAI / PPAP EXCEL FOR CNC &amp; AUTO SHOPS</span></div></a>
-      <a class="proj-card tall" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-audit"><span class="poster-big">Auditify</span><span class="poster-small">FREE WEBSITE AUDIT TOOL — 36 CHECKS, FULL REPORT, PDF &amp; MONITORING</span></div></a>
-      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM WITH A MANDATORY HUMAN APPROVAL GATE</span></div></a>
-      <a class="proj-card tall" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-tether"><span class="poster-big">TETHER</span><span class="poster-small">ZERO-SDK SPLIT-BRAIN PERSISTENCE — AI AGENTS THAT SURVIVE DISCONNECTS</span></div></a>
+      <a class="proj-card tall" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/specballoon.png" alt="SpecBalloon poster"></a>
+      <a class="proj-card tall" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/auditify.png" alt="Auditify poster"></a>
+      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/phalanx.png" alt="PHALANX poster"></a>
+      <a class="proj-card tall" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/tether.png" alt="TETHER poster"></a>
     </div>
     <div class="grid hidden" data-panel="page-mobile">
-      <a class="proj-card tall" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-dopa"><span class="poster-big">DopaDiary</span><span class="poster-small">PARKINSON'S MONITORING — SPIRAL, VOICE, TAPPING &amp; TREMOR ENGINES ON A DOSE CLOCK</span></div></a>
-      <a class="proj-card tall" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><div class="poster p-evenly"><span class="poster-big">Evenly</span><span class="poster-small">EXPENSE SPLITTING — PAISE-PERFECT SPLITS, UPI SETTLE-UP, OFFLINE-FIRST</span></div></a>
-      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION FOR URLS AND TEXT — CREDIT-GATED, LIVE</span></div></a>
+      <a class="proj-card tall" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/dopadiary.png" alt="DopaDiary poster"></a>
+      <a class="proj-card tall" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/evenly.png" alt="Evenly poster"></a>
+      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/gillnet.png" alt="GillNet AI poster"></a>
     </div>
     <div class="grid hidden" data-panel="page-web">
-      <a class="proj-card tall" href="https://krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-krynex"><span class="poster-big">Krynex</span><span class="poster-small">AUDIT AGENCY SITE — FIGMA-FIRST, PREMIUM TYPOGRAPHY, NO SLOP</span></div></a>
-      <a class="proj-card tall" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-vajra"><span class="poster-big">Vajra</span><span class="poster-small">GPU KERNEL OPTIMISATION — SGEMM, SOFTMAX, CONV1D &amp; SOBEL, MEASURED</span></div></a>
-      <a class="proj-card tall" href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover><div class="poster p-paper"><span class="poster-big">PaperFellows</span><span class="poster-small">STUDENT PAPER &amp; NOTES PLATFORM</span></div></a>
+      <a class="proj-card tall" href="https://krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/krynex.png" alt="Krynex poster"></a>
+      <a class="proj-card tall" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/vajra.png" alt="Vajra poster"></a>
+      <a class="proj-card tall" href="https://github.com/DhyeyPatel007" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/paperfellows.png" alt="PaperFellows poster"></a>
     </div>
     <div class="grid hidden" data-panel="page-security">
-      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">PHISHING &amp; SCAM DETECTION FOR URLS AND TEXT</span></div></a>
-      <a class="proj-card tall" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><div class="poster p-datum"><span class="poster-big">DATUM</span><span class="poster-small">SQL INJECTION TESTING UI OVER SQLMAP — OWN SITES &amp; PRACTICE LAB ONLY</span></div></a>
-      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">PAYPAL DISPUTE-DEFENSE SWARM — EVIDENCE, OFFERS &amp; VERDICTS</span></div></a>
+      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/gillnet.png" alt="GillNet AI poster"></a>
+      <a class="proj-card tall" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/datum.png" alt="DATUM poster"></a>
+      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/phalanx.png" alt="PHALANX poster"></a>
     </div>
     <div class="grid hidden" data-panel="page-all">
-      <a class="proj-card tall" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-spec"><span class="poster-big">SpecBalloon</span><span class="poster-small">AI TOOLS</span></div></a>
-      <a class="proj-card tall" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-audit"><span class="poster-big">Auditify</span><span class="poster-small">AI TOOLS</span></div></a>
-      <a class="proj-card tall" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-dopa"><span class="poster-big">DopaDiary</span><span class="poster-small">MOBILE APPS</span></div></a>
-      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-gill"><span class="poster-big">GillNet AI</span><span class="poster-small">MOBILE / SECURITY</span></div></a>
-      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-phalanx"><span class="poster-big">PHALANX</span><span class="poster-small">AI TOOLS / SECURITY</span></div></a>
-      <a class="proj-card tall" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><div class="poster p-tether"><span class="poster-big">TETHER</span><span class="poster-small">AI TOOLS</span></div></a>
-      <a class="proj-card tall" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><div class="poster p-evenly"><span class="poster-big">Evenly</span><span class="poster-small">MOBILE APPS</span></div></a>
-      <a class="proj-card tall" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-vajra"><span class="poster-big">Vajra</span><span class="poster-small">WEB &amp; SAAS</span></div></a>
-      <a class="proj-card tall" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><div class="poster p-datum"><span class="poster-big">DATUM</span><span class="poster-small">SECURITY TOOLS</span></div></a>
-      <a class="proj-card tall" href="https://krynex.in" target="_blank" rel="noopener" data-hover><div class="poster p-krynex"><span class="poster-big">Krynex</span><span class="poster-small">WEB &amp; SAAS</span></div></a>
+      <a class="proj-card tall" href="https://spec-balloon.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/specballoon.png" alt="SpecBalloon poster"></a>
+      <a class="proj-card tall" href="https://auditify.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/auditify.png" alt="Auditify poster"></a>
+      <a class="proj-card tall" href="https://dopadiary.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/dopadiary.png" alt="DopaDiary poster"></a>
+      <a class="proj-card tall" href="https://gillnet-project.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/gillnet.png" alt="GillNet AI poster"></a>
+      <a class="proj-card tall" href="https://phalanx.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/phalanx.png" alt="PHALANX poster"></a>
+      <a class="proj-card tall" href="https://tether-ten-psi.vercel.app" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/tether.png" alt="TETHER poster"></a>
+      <a class="proj-card tall" href="https://github.com/DhyeyPatel007/evenly" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/evenly.png" alt="Evenly poster"></a>
+      <a class="proj-card tall" href="https://vajra.krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/vajra.png" alt="Vajra poster"></a>
+      <a class="proj-card tall" href="https://datum-a7iq.onrender.com" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/datum.png" alt="DATUM poster"></a>
+      <a class="proj-card tall" href="https://krynex.in" target="_blank" rel="noopener" data-hover><img class="poster-img" src="assets/posters/krynex.png" alt="Krynex poster"></a>
     </div>
   </section>
   <section class="contact reveal-slide">
