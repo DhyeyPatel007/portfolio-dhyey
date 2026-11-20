@@ -213,3 +213,36 @@ img{display:block;max-width:100%}
 .reveal.in{opacity:1;transform:none}
 .reveal-slide{opacity:0;transform:translateY(70px);transition:opacity .8s ease,transform .8s ease}
 .reveal-slide.in{opacity:1;transform:none}
+
+/* ---------- ARCHIVE WATERFALL ---------- */
+.archive-masonry{position:relative;z-index:1;columns:3;column-gap:26px;max-width:1240px;margin:0 auto}
+.archive-masonry .arch-card{display:block;width:auto;margin:0 0 26px;break-inside:avoid}
+.archive-masonry .poster-img{height:auto}
+.ar-tall .poster-img{aspect-ratio:3/4.1}
+.ar-std .poster-img{aspect-ratio:3/3.4}
+.ar-sq .poster-img{aspect-ratio:1/1}
+.ar-wide .poster-img{aspect-ratio:4/2.9}
+@media(max-width:900px){.archive-masonry{columns:2}}
+@media(max-width:560px){.archive-masonry{columns:1}}
+.blob-c{width:520px;height:520px;background:#FBD268;top:34%;left:50%;margin-left:-260px;opacity:.4}
+
+/* ---------- HOME PROJECT ENTRIES ---------- */
+.home-proj-list{max-width:1150px;margin:56px auto 0;display:flex;flex-direction:column;gap:30px}
+.home-proj{display:flex;gap:30px;align-items:center;background:#FBFAF7;border-radius:26px;padding:22px;text-decoration:none;box-shadow:0 16px 36px rgba(0,0,0,.07);transition:transform .3s}
+.home-proj:hover{transform:translateY(-5px)}
+.home-proj .poster-img{width:330px;height:225px;flex:none}
+.hp-meta{display:flex;flex-direction:column;gap:9px}
+.hp-meta strong{font-size:clamp(24px,3vw,34px);font-weight:800;color:#111}
+.hp-meta em{font-style:normal;font-size:16.5px;line-height:1.55;color:#4a4a44;max-width:560px}
+.hp-meta i{font-style:normal;font-weight:700;font-size:13.5px;letter-spacing:.1em;color:var(--orange)}
+@media(max-width:760px){.home-proj{flex-direction:column;align-items:flex-start}.home-proj .poster-img{width:100%;height:auto;aspect-ratio:16/10}}
+
+/* ---------- PROJECTS PAGE CAPTIONS ---------- */
+.proj-card.tall{height:auto}
+.proj-card.tall .poster-img{height:290px}
+.proj-meta{display:block;padding:14px 6px 4px}
+.proj-meta strong{display:block;font-size:19px;font-weight:800;color:#111}
+.proj-meta em{display:block;font-style:normal;font-size:13.5px;line-height:1.5;color:#5a5a54;margin-top:4px}
+.proj-meta i{font-style:normal;font-weight:700;font-size:11.5px;letter-spacing:.1em;color:var(--orange)}
+.archive-masonry img[src*="evenly.png"]{object-position:50% 82%}
+.archive-masonry img[src*="krynex.png"]{object-position:50% 10%}
