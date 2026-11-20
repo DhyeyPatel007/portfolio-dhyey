@@ -1,2 +1,10 @@
 .shots/
 shot.mjs
+node_modules/
+dist/
+.refs/
+.cmp/
+cmp.mjs
+shot-target.mjs
+shot-wide.mjs
+shot2.mjs
