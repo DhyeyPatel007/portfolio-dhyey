@@ -38,7 +38,7 @@ img{display:block;max-width:100%}
   -webkit-mask-image:linear-gradient(to bottom,#000 88%,transparent 99%);mask-image:linear-gradient(to bottom,#000 88%,transparent 99%)}
 .hl{position:absolute;inset:0;width:100%;height:100%}
 .hl-back{z-index:2}
-.hl-person{z-index:3;filter:drop-shadow(0 22px 28px rgba(74,46,10,.28))}
+.hl-person{z-index:3}
 .hl-front{z-index:4}
 .flower{position:absolute;overflow:visible;filter:drop-shadow(0 10px 14px rgba(74,46,10,.22))}
 .f-back-left{width:142px;left:16%;top:33%;z-index:2;animation:drift 7s ease-in-out infinite}
@@ -71,11 +71,12 @@ img{display:block;max-width:100%}
 .services{background:var(--cream);padding:90px 24px 130px;overflow:hidden}
 .section-title{font-weight:800;color:#111}
 .section-title.taupe{color:#8f8672;text-align:center;font-size:clamp(30px,4.6vw,54px)}
+.services .section-title{font-size:clamp(44px,6.2vw,76px);line-height:1.05;text-align:center}
 .section-title.huge{font-size:clamp(38px,6vw,76px);text-align:center}
 .fan{display:flex;justify-content:center;align-items:stretch;margin-top:64px;padding:0 10px}
-.svc-card{background:#111;border-radius:24px;width:250px;min-height:340px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 48px rgba(0,0,0,.28);flex:none}
+.svc-card{background:#111;border-radius:24px;width:288px;min-height:392px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 48px rgba(0,0,0,.28);flex:none;will-change:transform}
 .svc-card .sphere{width:150px;height:150px;margin:44px auto 30px}
-.svc-band{margin-top:auto;color:#fff;font-weight:700;font-size:19px;line-height:1.3;text-align:center;padding:20px 12px 24px}
+.svc-band{margin-top:auto;color:#fff;font-weight:700;font-size:23px;line-height:1.3;text-align:center;padding:24px 14px 30px}
 .tilt-1{transform:rotate(-6deg) translateY(16px);z-index:1}
 .tilt-2{transform:rotate(-2deg);margin-left:-26px;z-index:2}
 .tilt-3{transform:rotate(2deg);margin-left:-26px;z-index:3}
@@ -91,6 +92,14 @@ img{display:block;max-width:100%}
 
 /* ---------- ARCHIVE ---------- */
 .archive{position:relative;background:#FBFAF7;padding:120px 24px 130px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);z-index:0;pointer-events:none;opacity:.55}
+.blob-a{width:480px;height:480px;background:#F5B81E;top:-120px;right:-100px;animation:blobFloat 13s ease-in-out infinite}
+.blob-b{width:420px;height:420px;background:#E8912D;bottom:-140px;left:-120px;animation:blobFloat 16s ease-in-out infinite reverse}
+@keyframes blobFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-46px,38px) scale(1.12)}}
+.arch-folder{position:absolute;z-index:1;pointer-events:none;filter:drop-shadow(0 14px 18px rgba(0,0,0,.18))}
+.af-1{width:92px;top:120px;left:4%;rotate:-10deg}
+.af-2{width:70px;top:300px;right:5%;rotate:12deg}
+.af-3{width:80px;bottom:90px;left:6%;rotate:7deg}
 .watermark{position:absolute;top:36px;left:50%;transform:translateX(-50%);font-size:clamp(80px,15vw,215px);font-weight:800;line-height:.95;color:var(--watermark);text-align:center;z-index:0;user-select:none;white-space:nowrap}
 .archive-sub{position:relative;z-index:2;text-align:center;font-weight:600;color:#3c3c3c;letter-spacing:.35em;font-size:14px;margin-bottom:70px}
 .archive-row{position:relative;z-index:1;display:flex;justify-content:center;gap:26px;flex-wrap:wrap;max-width:1200px;margin:0 auto}
@@ -107,6 +116,8 @@ img{display:block;max-width:100%}
 .poster-small{font-size:10.5px;font-weight:600;letter-spacing:.14em;line-height:1.55;opacity:.85}
 .poster.arch{aspect-ratio:3/4.1;justify-content:flex-end}
 .poster.arch .poster-big{font-size:24px}
+.char{display:inline-block;transform:translateY(60%);opacity:0;transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .7s}
+.chars.in .char{transform:none;opacity:1}
 .poster-img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block}
 .panel-row img[src*="gillnet.png"]{object-position:50% 8%}
 .panel-row img[src*="tether.png"]{object-position:50% 78%}
