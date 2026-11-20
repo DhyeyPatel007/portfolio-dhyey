@@ -12,12 +12,11 @@ export function AboutView({ go }: { go: (v: ViewName) => void }) {
       <section className="about-grey">
         <h2 className="about-giant-white" data-speed="0.05">Dhyey</h2>
         <div className="about-portrait-card reveal">
-          <svg className="leaf l1" viewBox="0 0 90 40" aria-hidden="true">
-            <use href="#leaf" />
-          </svg>
-          <img className="flower a-f1" src="/assets/sunflower.png" alt="" style={{ rotate: '20deg' }} />
-          <img className="main" src="/assets/about-main.png" alt="Dhyey Patel" />
-          <img className="flower a-f2" src="/assets/sunflower.png" alt="" style={{ rotate: '-26deg' }} />
+          <div className="about-hero-comp" aria-label="Dhyey Patel portrait with sunflowers">
+            <img src="/assets/hero-flowers-back.webp" alt="" />
+            <img src="/assets/hero-person.webp" alt="Dhyey Patel portrait" />
+            <img src="/assets/hero-flowers-front.webp" alt="" />
+          </div>
         </div>
       </section>
       <section className="about-body">
