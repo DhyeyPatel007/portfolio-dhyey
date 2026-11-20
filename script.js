@@ -41,7 +41,9 @@ observeReveals();
 // Scroll motion — elements drift at different speeds as you scroll (like the reference site)
 const paraGroups = [
   { sel: '.giant-name', speeds: [0.05] },
-  { sel: '.hero .flower', speeds: [0.16, 0.10, 0.20, 0.13] },
+  { sel: '.hl-back', speeds: [0.14] },
+  { sel: '.hl-person', speeds: [0.07] },
+  { sel: '.hl-front', speeds: [0.20] },
   { sel: '.watermark', speeds: [0.07] },
   { sel: '.arch-card', speeds: [0.05, -0.045, 0.07, -0.05, 0.04] },
   { sel: '.svc-card', speeds: [0.030, -0.022, 0.022, -0.030] },
