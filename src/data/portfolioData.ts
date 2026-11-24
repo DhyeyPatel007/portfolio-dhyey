@@ -1,4 +1,4 @@
-export type ViewName = 'home' | 'projects' | 'about';
+export type ViewName = 'home' | 'projects' | 'about' | 'workshop';
 export type Category = 'ai' | 'mobile' | 'web' | 'security';
 
 export interface ProjectItem {

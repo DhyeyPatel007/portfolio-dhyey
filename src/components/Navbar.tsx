@@ -5,6 +5,7 @@ const LINKS: { key: ViewName; label: string }[] = [
   { key: 'home', label: 'Home' },
   { key: 'projects', label: 'Projects' },
   { key: 'about', label: 'About Me' },
+  { key: 'workshop', label: '3D World' },
 ];
 
 export function Navbar({ view, go }: { view: ViewName; go: (v: ViewName) => void }) {

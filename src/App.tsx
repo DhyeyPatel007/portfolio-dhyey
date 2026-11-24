@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, lazy, Suspense } from 'react';
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -18,6 +18,11 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ProjectsView } from './components/ProjectsView';
 import { AboutView } from './components/AboutView';
+import { WorkshopEntry } from './workshop/WorkshopEntry';
+
+// Lazy: three.js must not ship in the homepage bundle — the 3D world loads
+// only when the user asks for it.
+const Workshop = lazy(() => import('./workshop/Workshop').then((m) => ({ default: m.Workshop })));
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,14 +52,30 @@ function splitChars(root: HTMLElement) {
 }
 
 export default function App() {
-  const [view, setView] = useState<ViewName>('home');
+  const [view, setView] = useState<ViewName>(() =>
+    window.location.hash === '#/workshop' ? 'workshop' : 'home'
+  );
   const lenisRef = useRef<Lenis | null>(null);
   const mainRef = useRef<HTMLDivElement>(null);
 
   const go = useCallback((v: ViewName) => {
     setView(v);
+    if (v === 'workshop') {
+      window.location.hash = '#/workshop';
+    } else if (window.location.hash === '#/workshop') {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
     if (lenisRef.current) lenisRef.current.scrollTo(0, { immediate: true });
     window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    const onHash = () => {
+      if (window.location.hash === '#/workshop') setView('workshop');
+      else setView((v) => (v === 'workshop' ? 'home' : v));
+    };
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
   useEffect(() => {
@@ -74,6 +95,12 @@ export default function App() {
       lenisRef.current = null;
     };
   }, []);
+
+  // the 3D workshop owns its own input — freeze smooth-scroll underneath it
+  useEffect(() => {
+    if (view === 'workshop') lenisRef.current?.stop();
+    else lenisRef.current?.start();
+  }, [view]);
 
   useEffect(() => {
     const root = mainRef.current;
@@ -197,8 +224,19 @@ export default function App() {
     <div ref={mainRef} className="relative min-h-screen w-full overflow-x-clip bg-[#F3EDE2]">
       <SvgDefs />
       <Cursor />
-      <Navbar view={view} go={go} />
+      {view !== 'workshop' && <Navbar view={view} go={go} />}
       <main>
+        {view === 'workshop' && (
+          <Suspense
+            fallback={
+              <div className="fixed inset-0 z-[2000] flex items-center justify-center bg-[#0b0d0e]">
+                <p className="text-sm tracking-[0.3em] text-[#8a93a0] uppercase">Warming up the workshop…</p>
+              </div>
+            }
+          >
+            <Workshop go={go} />
+          </Suspense>
+        )}
         {view === 'home' && (
           <>
             <Hero />
@@ -208,6 +246,7 @@ export default function App() {
             <Toolkit />
             <ProjectsHome go={go} />
             <VideoSection />
+            <WorkshopEntry go={go} />
             <Contact />
             <Footer go={go} />
           </>
